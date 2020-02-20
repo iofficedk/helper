@@ -1,7 +1,7 @@
 {
 	"name": "iofficedk/helpers",
-	"description": "fm\helpers",
-	"keywords": ["fm\helpers", "Config"],
+	"description": "fm helpers",
+	"keywords": ["fm helpers", "Config"],
 	"type": "library",
 	"require": {
 		"php": ">=7.0.0"
