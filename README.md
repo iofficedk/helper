@@ -4,4 +4,11 @@ Fm/Helpers are some tools use by other composer modules I made. Comment for my m
 1. /Config
     - ::get('whatever') - return the config section if any
 
+## Composer install
+```sh
+$ composer require iofficedk/
+```
+
+
+
 
