@@ -6,7 +6,7 @@ Fm/Helpers are some tools use by other composer modules I made. Comment for my m
 
 ## Composer install
 ```sh
-$ composer require iofficedk/
+$ composer require iofficedk/helpers
 ```
 
 
