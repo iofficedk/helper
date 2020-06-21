@@ -18,11 +18,11 @@ Class Config
      */
     public function __construct($Method=null)
     {
-        self::setMethod($Method);
+        $this->setMethod($Method);
     }
 
 
-    private function setMethod($Method=null)
+    private static function setMethod($Method=null)
     {
         if (!empty($Method) && in_array($Method, array('io', 'laravel', 'lumen')))
         {
@@ -52,13 +52,12 @@ Class Config
         {
             $Result = self::Returning($Config, $SubConfig);
         }
-
-
+        
         return $Result;
     }
 
 
-    private function Returning($Config=null, $SubConfig=null)
+    private static function Returning($Config=null, $SubConfig=null)
     {
         $Result = null;
 
@@ -88,7 +87,7 @@ Class Config
      * @return bool
      * @throws RuntimeException - throw new Exception if empty config or json error
      */
-    private function initIo()
+    private static function initIo()
     {
         $DS = DIRECTORY_SEPARATOR;
 
